@@ -4,7 +4,7 @@
 
 - #### 클라우드에 몽고DB 설치하기
 
-![1_1](./resources/2_1.png?lastModify=1626455824)
+
 
 - 우분투 EC2 생성. 
 
@@ -95,3 +95,31 @@
     authorization: enabled
      - sudo service mongod restart
   ```
+
+
+
+
+
+
+
+- MONGODB IN Fast Campus
+
+  **1. Install MongoDB**
+
+  \----------------------------------------------------------------------------------------------------------------
+
+  `sudo apt update -y`
+
+  `sudo apt upgrade -y`
+  ` sudo apt install -y mongodb`
+  ` sudo systemctl status mongodb`
+  ` sudo vi /etc/mongodb.conf`
+   *\# bind_ip = 0.0.0.0 로 수정*
+   $ `sudo systemctl restart mongodb`
+   \# aws 인스턴스 27017 포트 접속 허용 ---------------------------------------------------------------------------------------------------------------- mongo 명령어를 입력하면 mongo shell에 접속됩니다.
+
+  **2. Install Robomongo**
+
+  https://robomongo.org/ 페이지에서 경로에서 ROBO 3T 다운로드 후 설치 합니다. **3. Connection**
+
+  MongoDB Connections에서 ip를 입력하여 서버의 mongoDB에 접속합니다.
